@@ -81,7 +81,9 @@ class HomePage extends React.Component {
           </div>
           <div className="col-md-12 second-title" >
             <h2>Asthma</h2>
-            <p>People who have asthma generally suffer more from unhealthy air quality. This map displays the density of people who have asthma per census tract where the darker the color, the more dense.</p>
+            <p>People who have asthma generally suffer more from unhealthy air quality. This map displays census tracts and their respective asthma rates.
+              The darker the color, the higher the asthma rate is in that census tract compared to other census tracts
+            </p>
           </div>
           <div className="col-12 col-md-2">
             <div

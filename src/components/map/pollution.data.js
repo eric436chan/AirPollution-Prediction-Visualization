@@ -88,9 +88,33 @@ var busLayer = new FeatureLayer({
 
 //conditions
 
+const asthmaTemplate = {
+  title: "Census Tract: {L0CalEnviroScreen_3_0_tract}",
+  content: [
+    {
+      type: "fields",
+      fieldInfos: [
+        {
+          fieldName: "L0CalEnviroScreen_3_0_pop2010",
+          label: "Population"
+        },
+        {
+          fieldName: "L0CalEnviroScreen_3_0_asthma",
+          label: "Population that has asthma"
+        },
+        {
+          fieldName: "L0CalEnviroScreen_3_0_asthmaP",
+          label: "Asthma Rate"
+        }
+      ]
+    }
+  ]
+}
+
 var heartMortality = new FeatureLayer({
-  title: "Density of Asthma Per Census Tract (OEHHA)",
-  url: 'https://services1.arcgis.com/PCHfdHz4GlDNAhBb/ArcGIS/rest/services/CES3FINAL_AGOL/FeatureServer/1'
+  title: "Asthma Rates Compared to Other Census Tracts (OEHHA)",
+  url: "https://services1.arcgis.com/PCHfdHz4GlDNAhBb/ArcGIS/rest/services/CES3FINAL_AGOL/FeatureServer/1",
+  popupTemplate: asthmaTemplate
 });
 
 var infrastructureGroupLayer = new GroupLayer({
