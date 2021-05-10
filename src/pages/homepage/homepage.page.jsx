@@ -46,7 +46,7 @@ class HomePage extends React.Component {
             These maps showcase current air quality conditions taken from various sensors scattered throughout Los Angeles.
             They also pinpoint some of the common sources of air pollution as stated by <a href='https://www.nrdc.org/stories/air-pollution-everything-you-need-know'>NRDC</a>,
              <a href='https://phys.org/news/2016-04-air-pollution.html'>PHYS</a>, and <a href='https://www.aqi.in/blog/here-are-the-10-main-causes-of-air-pollution/'>AQI</a>.
-             They also showcase heart disease mortality rates as well as hospitalization rates.
+             They also density of asthma per census tract.
           </div>
           <div className="col-md-12 title" >
             <h2>Air Quality</h2>
