@@ -1,0 +1,19 @@
+.articles img{
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+    .articles{
+        display: none;
+    }
+}
+
+// .articles a{
+//     color: black;
+// }
+
+// .articles a:hover{
+//     color: darkgoldenrod
+// }

@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Overpass;
+    src: url('../../static/fonts/overpass-bold.otf');
+}
+
+.air-quality {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#aq-title {
+    font-family: Overpass;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#explore {
+    background-color: #ffc107;
+    color: #000;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    border: none;
+    &:hover {
+        color: #fff;
+        background-color: #212529;
+        i {
+            transition: all 0.3s ease;
+            transform: rotateZ(90deg)
+        }
+    }
+}
+
+#aq-weather-icon{
+    width: 100px;
+    height: auto;
+}
+
+
+
+.table-header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.above{
+    color: white
+}
+
+.good{
+    background-color: lightgreen;
+}
+
+.moderate{
+    background-color: yellow;
+}
+
+.usg{
+    background-color: orange;
+}
+
+.unhealthy{
+    background-color: red;
+}
+
+.vunhealthy{
+    background-color: purple;
+}
+
+.hazard{
+    background-color: maroon;
+}
+
+.weather-search-results{
+    font-size: small;
+}
